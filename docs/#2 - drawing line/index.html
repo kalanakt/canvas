@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        let canvas = document.querySelector("canvas")
+
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
+
+        let c = canvas.getContext("2d")
+
+        // Line
+
+        c.beginPath()
+        c.moveTo(50, 300)
+        c.lineTo(300, 100)
+        c.strokeStyle = "#fa34a3"
+        c.stroke()
+    </script>   
+</body>
+</html>
