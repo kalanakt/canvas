@@ -5,30 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>canvas</title>
-    <style>
-
-    </style>
 </head>
 <body>
-    <canvas></canvas>
-    <script>
-        let canvas = document.querySelector("canvas")
-
-        canvas.width = window.innerWidth
-        canvas.height = window.innerHeight
-
-        let c = canvas.getContext("2d")
-        // Arc \ circle
-
-        for (let i = 0; i < 100; i++){
-            let x = Math.random() * window.innerWidth
-            let y = Math.random() * window.innerHeight
-            let randomColor = Math.floor(Math.random()*16777215).toString(16)
-            c.strokeStyle = "#" + randomColor
-            c.beginPath()
-            c.arc(x, y, 30, 0, Math.PI * 2, false)
-            c.stroke()
-        }
-    </script>   
+    
 </body>
 </html>

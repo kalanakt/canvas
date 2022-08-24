@@ -19,25 +19,19 @@
 
         let c = canvas.getContext("2d")
         // Arc \ circle
-        var x = Math.random() * innerWidth
-        var y = Math.random() * innerHeight
-        var dx = ( Math.random() - 0.5 ) * 10
-        var dy = ( Math.random() - 0.5 ) * 10
-        var radious = 30
+        var x = 200
+        var dx = 1
         function animation(){
             requestAnimationFrame(animation)
             c.clearRect(0, 0, innerWidth, innerHeight)
+            console.log("cjhvkhv")
             c.beginPath()
-            c.arc(x, y, 30, 0, Math.PI * 2, false)
+            c.arc(x, 300, 30, 0, Math.PI * 2, false)
             c.stroke()
             if (x + 30 > innerWidth || x < 30){
                 dx = -dx
             }
-            if (y + 30 > innerHeight || y < 30){
-                dy = -dy
-            }
-            x += dx
-            y += dy
+            x += dx  
         }
         animation()
     </script>   
